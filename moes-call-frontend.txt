@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="workingCalc.MainPage">
+
+
+    <StackLayout>
+        <Entry x:Name="Display" Text="0"
+                           BackgroundColor="White"
+            FontAttributes="Bold"
+            FontSize="48"
+            HorizontalTextAlignment="End"
+            TextColor="BlueViolet"
+            VerticalTextAlignment="Center"
+               
+        />
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+
+
+
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+
+
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="But_C" Text="C"
+            FontSize="Large"
+            FontAttributes="Bold"
+                    TextColor="Black"
+            BackgroundColor="LightGray"
+            Clicked="But_C_Clicked"
+            Grid.Row="0" Grid.Column="0"/>
+
+            <Button x:Name="But_add_minus" Text="+/-"
+            FontSize="Large"
+            FontAttributes="Bold"
+                    TextColor="Black"
+            BackgroundColor="LightGray"
+            Clicked="But_add_minus_Clicked"
+            Grid.Row="0" Grid.Column="1"/>
+
+            <Button x:Name="But_mod" Text="%"
+            FontSize="Large"
+            FontAttributes="Bold"
+                    TextColor="Black"
+            BackgroundColor="LightGray"
+            Clicked="But_mod_Clicked"
+            Grid.Row="0" Grid.Column="2"/>
+
+            <Button x:Name="But_div" Text="/"
+            FontSize="Large"
+            FontAttributes="Bold"
+            BackgroundColor="BlueViolet"
+            Clicked="But_div_Clicked"
+            Grid.Row="0" Grid.Column="3"/>
+
+            <Button x:Name="But_7" Text="7"
+            FontSize="Large"
+            FontAttributes="Bold"
+            BackgroundColor="DarkGray"
+            Clicked="But_7_Clicked"
+            Grid.Row="1" Grid.Column="0"/>
+
+            <Button x:Name="But_8" Text="8"
+            FontSize="Large"
+            FontAttributes="Bold"
+            BackgroundColor="DarkGray"
+            Clicked="But_8_Clicked"
+            Grid.Row="1" Grid.Column="1"/>
+
+            <Button x:Name="But_9" Text="9"
+            FontSize="Large"
+            FontAttributes="Bold"
+            BackgroundColor="DarkGray"
+            Clicked="But_9_Clicked"
+            Grid.Row="1" Grid.Column="2"/>
+
+            <Button x:Name="But_multiply" Text="X"
+            FontSize="Large"
+            FontAttributes="Bold"
+            BackgroundColor="BlueViolet"
+            Clicked="But_multiply_Clicked"
+            Grid.Row="1" Grid.Column="3"/>
+
+            <Button x:Name="But_4" Text="4"
+            FontSize="Large"
+            FontAttributes="Bold"
+            BackgroundColor="DarkGray"
+            Clicked="But_4_Clicked"
+            Grid.Row="2" Grid.Column="0"/>
+
+            <Button x:Name="But_5" Text="5"
+            FontSize="Large"
+            FontAttributes="Bold"
+            BackgroundColor="DarkGray"
+            Clicked="But_5_Clicked"
+            Grid.Row="2" Grid.Column="1"/>
+
+            <Button x:Name="But_6" Text="6"
+            FontSize="Large"
+            FontAttributes="Bold"
+            BackgroundColor="DarkGray"
+            Clicked="But_6_Clicked"
+            Grid.Row="2" Grid.Column="2"/>
+
+            <Button x:Name="But_minus" Text="-"
+            FontSize="Large"
+            FontAttributes="Bold"
+            BackgroundColor="BlueViolet"
+            Clicked="But_minus_Clicked"
+            Grid.Row="2" Grid.Column="3"/>
+
+            <Button x:Name="But_1" Text="1"
+            FontSize="Large"
+            FontAttributes="Bold"
+            BackgroundColor="DarkGray"
+            Clicked="But_1_Clicked"
+            Grid.Row="3" Grid.Column="0"/>
+
+            <Button x:Name="But_2" Text="2"
+            FontSize="Large"
+            FontAttributes="Bold"
+            BackgroundColor="DarkGray"
+            Clicked="But_2_Clicked"
+            Grid.Row="3" Grid.Column="1"/>
+
+            <Button x:Name="But_3" Text="3"
+            FontSize="Large"
+            FontAttributes="Bold"
+            BackgroundColor="DarkGray"
+            Clicked="But_3_Clicked"
+            Grid.Row="3" Grid.Column="2"/>
+
+            <Button x:Name="But_plus" Text="+"
+            FontSize="Large"
+            FontAttributes="Bold"
+            BackgroundColor="BlueViolet"
+            Clicked="But_plus_Clicked"
+            Grid.Row="3" Grid.Column="3"/>
+        </Grid>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="But_0" Text="0"
+            FontSize="Large"
+            FontAttributes="Bold"
+            BackgroundColor="DarkGray"
+            Clicked="But_0_Clicked"
+            Grid.Row="0" Grid.Column="0"/>
+
+            <Button x:Name="But_point" Text="."
+            FontSize="Large"
+            FontAttributes="Bold"
+            BackgroundColor="DarkGray"
+            Clicked="But_point_Clicked"
+            Grid.Row="0" Grid.Column="1"/>
+
+            <Button x:Name="But_equal" Text="="
+            FontSize="Large"
+            FontAttributes="Bold"
+            BackgroundColor="BlueViolet"
+            Clicked="But_equal_Clicked"
+            Grid.Row="0" Grid.Column="2"/>
+        </Grid>
+
+
+
+
+
+    </StackLayout>
+</ContentPage>
